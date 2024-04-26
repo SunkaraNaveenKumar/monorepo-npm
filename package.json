@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "First monorepo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm --workspace=packages/stencil-header run build && npm --workspace=apps/react-project run dev"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "author": "Naveen",
+  "license": "ISC"
+}
